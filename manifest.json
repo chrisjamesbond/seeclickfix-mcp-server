@@ -1,0 +1,46 @@
+{
+  "dxt_version": "0.1",
+  "name": "mcp-see-click-fix",
+  "display_name": "SeeClickFix",
+  "version": "0.1.0",
+  "description": "Access real-time civic issue reports from SeeClickFix",
+  "long_description": "Access real-time civic issue reports from SeeClickFix.",
+  "author": {
+    "name": "Chris Bond",
+    "email": "chrisjamesbond@gmail.com"
+  },
+  "screenshots": [
+    "SeeClickFix_Wrench_Heart.png"
+  ],
+  "tools": [
+    {
+      "name": "get_requests",
+      "description": "Get requests near a point of interest"
+    }
+  ],
+  "server": {
+    "type": "python",
+    "entry_point": "server/main.py",
+    "mcp_config": {
+      "command": "/Users/chris/.local/bin/uv",
+      "args": [
+        "--directory",
+        "${__dirname}/server",
+        "run",
+        "see-click-fix.py"
+      ],
+      "env": {
+        "PYTHONPATH": "server/lib"
+      }
+    }
+  },
+  "keywords": [
+    "civic",
+    "technology"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chrisjamesbond/tf-idf"
+  }
+}
