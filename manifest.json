@@ -1,46 +1,41 @@
 {
   "dxt_version": "0.1",
-  "name": "mcp-see-click-fix",
+  "name": "see-click-fix",
   "display_name": "SeeClickFix",
   "version": "0.1.0",
   "description": "Access real-time civic issue reports from SeeClickFix",
-  "long_description": "Access real-time civic issue reports from SeeClickFix.",
+  "long_description": "This Desktop Extension provides access to real-time civic issue reports from SeeClickFix's Open311 API. Get information about local infrastructure problems, service requests, and community-reported issues by location.",
   "author": {
     "name": "Chris Bond",
     "email": "chrisjamesbond@gmail.com"
   },
+  "icon": "SeeClickFix_Wrench_Heart.png",
   "screenshots": [
     "SeeClickFix_Wrench_Heart.png"
   ],
+  "server": {
+    "type": "python",
+    "entry_point": "server/see-click-fix.py",
+    "mcp_config": {
+      "command": "python3",
+      "args": [
+        "${__dirname}/server/see-click-fix.py"
+      ]
+    }
+  },
   "tools": [
     {
       "name": "get_requests",
-      "description": "Get requests near a point of interest"
+      "description": "Get civic issue requests near a geographic location using latitude and longitude coordinates"
     }
   ],
-  "server": {
-    "type": "python",
-    "entry_point": "server/main.py",
-    "mcp_config": {
-      "command": "/Users/chris/.local/bin/uv",
-      "args": [
-        "--directory",
-        "${__dirname}/server",
-        "run",
-        "see-click-fix.py"
-      ],
-      "env": {
-        "PYTHONPATH": "server/lib"
-      }
-    }
-  },
   "keywords": [
     "civic",
-    "technology"
+    "government",
+    "infrastructure",
+    "community",
+    "open311",
+    "seeclickfix"
   ],
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/chrisjamesbond/tf-idf"
-  }
+  "license": "MIT"
 }
