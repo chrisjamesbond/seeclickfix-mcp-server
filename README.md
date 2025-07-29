@@ -13,7 +13,7 @@ A Model Context Protocol (MCP) server that provides access to real-time civic is
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/chrisjamesbond/seeclickfix-mcp-server
 cd mcp-see-click-fix
 ```
 
