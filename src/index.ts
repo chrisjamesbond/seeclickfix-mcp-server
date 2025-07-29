@@ -148,8 +148,6 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 
 // Start the server
 async function main() {
-  console.log('Hello from See Click Fix!');
-  
   const transport = new StdioServerTransport();
   await server.connect(transport);
   
@@ -161,9 +159,7 @@ async function main() {
 }
 
 // Initialize and run the server
-if (import.meta.url === `file://${process.argv[1]}`) {
-  main().catch((error) => {
-    console.error('Server error:', error);
-    process.exit(1);
-  });
-}
+main().catch((error) => {
+  console.error('Server error:', error);
+  process.exit(1);
+});

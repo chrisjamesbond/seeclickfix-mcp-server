@@ -14,12 +14,12 @@
     "SeeClickFix_Wrench_Heart.png"
   ],
   "server": {
-    "type": "python",
-    "entry_point": "server/see-click-fix.py",
+    "type": "node",
+    "entry_point": "dist/bundle.cjs",
     "mcp_config": {
-      "command": "python3",
+      "command": "node",
       "args": [
-        "${__dirname}/server/see-click-fix.py"
+        "${__dirname}/dist/bundle.cjs"
       ]
     }
   },
