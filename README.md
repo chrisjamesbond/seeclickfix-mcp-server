@@ -65,9 +65,13 @@ npm run build
 npm run bundle
 ```
 
-### Packaging
+### Quick Installation
 
-Create a [one-click MCP server installation for Claude Desktop](https://www.anthropic.com/engineering/desktop-extensions):
+Download the pre-built `.dxt` file from the [latest release](https://github.com/chrisjamesbond/seeclickfix-mcp-server/releases/latest) for [one-click MCP server installation in Claude Desktop](https://www.anthropic.com/engineering/desktop-extensions).
+
+### Building Your Own Package
+
+To create your own `.dxt` package:
 ```bash
 npx @anthropic-ai/dxt pack
 ```
