@@ -67,7 +67,7 @@ npm run bundle
 
 ### Packaging
 
-Create a distributable package:
+Create a [https://www.anthropic.com/engineering/desktop-extensions](one-click MCP server installation for Claude Desktop):
 ```bash
 npx @anthropic-ai/dxt pack
 ```
